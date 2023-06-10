@@ -14,12 +14,26 @@ const ExchangeDetailItem = ({ currency }) => {
   }, [currency.flag]);
 
   return (
-    <div>
-      <div>{currency.code}</div>
-      <div>{currency.name}</div>
-      <div>{currency.rateNow}</div>
-      <div>{currencyImage}</div>
-    </div>
+    <li className="details">
+      <div className="d-flex">
+        <div className="md-6">
+          <div className="d-flex spc-btw">
+            <div className="img-wrap">
+              <img className="flag" src={currencyImage} alt="str" />
+            </div>
+            <div>
+              <h3>{currency.code}</h3>
+              <div className="title">{currency.name}</div>
+            </div>
+          </div>
+        </div>
+        <div className="md-6">
+          <div className="d-flex f-end">
+            <div className="rate">{currency.rateNow}</div>
+          </div>
+        </div>
+      </div>
+    </li>
   );
 };
 
