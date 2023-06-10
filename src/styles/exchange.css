@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #578ae5;
+}
+
+.header {
+  padding: 1rem;
+  background-color: #4269b2;
+}
+
+.header-title {
+  margin: 0 auto;
+}
+
+.txt-white {
+  color: #fff;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.f-end {
+  justify-content: end;
+}
+
+.spc-btw {
+  gap: 15px;
+}
+
+.spc-btw-25 {
+  gap: 8px;
+  padding-left: 5px;
+}
+
+.word {
+  word-break: break-all;
+}
+
+.md-6 {
+  width: 50%;
+}
+
+.h-40 {
+  height: 42px;
+}
+
+.search-form {
+  width: 100%;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.mid-center {
+  justify-content: center;
+}
+
+.s-center {
+  align-self: center;
+}
+
+.f-center {
+  align-content: center;
+}
+
+.a-center {
+  align-items: center;
+}
+
+.info {
+  padding: 2.5rem 1rem;
+}
+
+.px-10 {
+  padding: 0 1rem;
+}
+
+.ft-sm {
+  font-size: 10px;
+}
+
+.details {
+  padding: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  padding-inline-start: 0;
+}
+
+h3,
+h2 {
+  margin-block-start: 0;
+  margin-block-end: 0.05rem;
+  text-transform: uppercase;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+.flag {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: #fff;
+}
+
+.title {
+  font-size: 11px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid > li {
+  background-color: #3f61a3;
+}
+
+.grid > li:nth-child(4n + 1) {
+  background-color: #4368af;
+}
+
+.grid > li:nth-child(4n - 12) {
+  background-color: #4368af;
+}
+
+.rate {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.search {
+  width: 80%;
+  height: 2.2rem;
+  margin: 0.75rem 0;
+  border-radius: 3px;
+  border: none;
+}
+
+.grid-details {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-details > li:nth-child(2n + 1) {
+  background-color: #4368af;
+}
+
+.grid-details > li:nth-child(2n + 2) {
+  background-color: #3f61a3;
+}
+
+.x-title {
+  text-align: right;
+}
+
+.back {
+  width: 15px;
+  height: 15px;
+}
+
+.footer {
+  text-align: center;
+  padding: 2.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .bg-screen {
+    margin: 0 10%;
+  }
+}
