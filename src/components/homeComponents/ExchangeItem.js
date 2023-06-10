@@ -1,7 +1,11 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { imageExist, placeholderImageUrl } from '../../utility/imagePlaceholder';
+import {
+  imageExist,
+  placeholderImageUrl,
+} from '../../utility/imagePlaceholder';
+import '../../styles/exchange.css';
 
 const ExchangeItem = ({ currency }) => {
   const [currencyImage, setCurrencyImage] = useState(placeholderImageUrl);
@@ -14,15 +18,27 @@ const ExchangeItem = ({ currency }) => {
   const detailUrl = `/currency/${currency.code}`;
 
   return (
-    <li>
-      <div>{currency.code}</div>
-      <div>{currency.name}</div>
-      <div>{currency.rateNow}</div>
-      <div>{currencyImage}</div>
-      <img src={currencyImage} alt="str" />
-      {/* <img src={currency.flag} alt="str" /> */}
-      <Link to={detailUrl}>Redirect</Link>
-      <hr />
+    <li className="container">
+      <Link to={detailUrl}>
+        <div className="info">
+          <div className="d-flex spc-btw">
+            <div className="img-wrap">
+              <img className="flag" src={currencyImage} alt="str" />
+            </div>
+            <div>
+              <h3>{currency.code}</h3>
+              <div className="title word h-40">{currency.name}</div>
+            </div>
+          </div>
+          <div className="rate d-flex spc-btw-25 a-center">
+            <div className="ft-sm">1 USD</div>
+            <div>
+              <span>~ </span>
+              <span className="word">{currency.rateNow}</span>
+            </div>
+          </div>
+        </div>
+      </Link>
     </li>
   );
 };
