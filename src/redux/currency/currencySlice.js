@@ -33,7 +33,7 @@ const fetchCurrencyList = (url) => createAsyncThunk(url, async (apiUrls, thunkAP
             );
             return {
               ...res,
-              rateNow: localCurrency[0].todayRate.toFixed(2),
+              rateNow: localCurrency[0].todayRate.toFixed(4),
               flag: `https://currencyfreaks.com/photos/flags/${localCurrency[0].type}.png`,
             };
           });
