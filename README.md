@@ -135,6 +135,8 @@ If you like this project... Give it a Star
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
+UI design was created by Nelson Sakwa and can be found on Behance.
+
 I would like to thank to the Microverse team for the learning opportunity
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -142,5 +144,7 @@ I would like to thank to the Microverse team for the learning opportunity
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE.md) licensed.
+
+UI design was created by Original design idea by 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
