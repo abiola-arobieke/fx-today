@@ -2,6 +2,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useState, useEffect } from 'react';
 import { getCurrencyList } from '../../redux/currency/currencySlice';
 import ExchangeItem from './ExchangeItem';
+import '../../styles/exchange.css';
 
 const ExchangeList = () => {
   const [search, setSearch] = useState('');
@@ -17,17 +18,17 @@ const ExchangeList = () => {
   }, [dispatch]);
 
   return (
-    <div>
-      <div>This is home list</div>
-      <form>
+    <div className="container bg-screen txt-white">
+      <form className="d-flex search-form">
         <input
           id="searchBar"
           type="search"
+          className="search"
+          placeholder="Search currency..."
           onChange={(e) => setSearch(e.target.value)}
         />
       </form>
-      <ul>
-        <li>rule your world</li>
+      <ul className="grid">
         {allExchange
           ?.filter((currency) => (search.toLowerCase() === ''
             ? currency
