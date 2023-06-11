@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h3><b>Trendy FX README</b></h3>
+  <h3><b>FX-TODAY README</b></h3>
 </div>
 
 # 📗 Table of Contents
