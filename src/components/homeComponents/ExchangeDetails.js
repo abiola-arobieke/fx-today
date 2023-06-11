@@ -12,6 +12,7 @@ const ExchangeDetails = () => {
     'https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies.json',
     `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${id}.json`,
   ];
+  const flag = `https://currencyfreaks.com/photos/flags/${id}.png`;
 
   useEffect(() => {
     dispatch(getSingleCurrency(apiUrls));
@@ -32,14 +33,25 @@ const ExchangeDetails = () => {
           onChange={(e) => setSearch(e.target.value)}
         />
       </form>
-      <div className="d-flex f-end details">
+      <div className="d-flex info">
+        <div className="md-6 d-flex mid-center">
+          <img className="base-img" src={flag} alt="currency-flag" />
+        </div>
+        <div className="md-6 d-flex mid-center base-title">
+          <div className="md-6">
+            <h2>{id}</h2>
+            <div>1.000</div>
+          </div>
+        </div>
+      </div>
+      {/* <div className="d-flex f-end details">
         <div className="md-6 x-title d-flex f-end">
           <div>
             <h2>{id}</h2>
             <div>1.000</div>
           </div>
         </div>
-      </div>
+      </div> */}
       <ul className="grid-details">
         {selectedCurrency?.filter((currency) => (search.toLowerCase() === ''
           ? currency
