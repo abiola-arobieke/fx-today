@@ -22,6 +22,11 @@ body {
   color: #fff;
 }
 
+.base-img {
+  width: 60px;
+  height: 60px;
+}
+
 .d-flex {
   display: flex;
 }
@@ -91,8 +96,8 @@ body {
 
 ul {
   list-style-type: none;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
+  margin-block-start: 0;
+  margin-block-end: 0;
   padding-inline-start: 0;
 }
 
