@@ -44,14 +44,6 @@ const ExchangeDetails = () => {
           </div>
         </div>
       </div>
-      {/* <div className="d-flex f-end details">
-        <div className="md-6 x-title d-flex f-end">
-          <div>
-            <h2>{id}</h2>
-            <div>1.000</div>
-          </div>
-        </div>
-      </div> */}
       <ul className="grid-details">
         {selectedCurrency?.filter((currency) => (search.toLowerCase() === ''
           ? currency
