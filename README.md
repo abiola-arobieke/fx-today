@@ -23,9 +23,9 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 [Trendy FX] <a name="about-project"></a>
+# 📖 [Fx-Today FX] <a name="about-project"></a>
 
-**Trendy FX** is a web app that displays the currency exchange rate for the day. User can select their choice of currency and compare the exchange rate with another currency.
+**Fx-Today FX** is a web app that displays the currency exchange rate for the day. User can select their choice of currency and compare the exchange rate with another currency.
 
 .
 
