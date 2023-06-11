@@ -16,7 +16,6 @@ const ExchangeDetails = () => {
 
   useEffect(() => {
     dispatch(getSingleCurrency(apiUrls));
-    // eslint-disable-next-line
   }, [dispatch]);
 
   const myCurrency = useSelector((store) => store.currencies);
