@@ -17,7 +17,6 @@ const ExchangeDetails = () => {
   useEffect(() => {
     dispatch(getSingleCurrency(apiUrls));
   }, [dispatch]);
-
   const myCurrency = useSelector((store) => store.currencies);
   const selectedCurrency = myCurrency.singleCurrency;
 
