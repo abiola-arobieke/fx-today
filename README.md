@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h3><b>Trendy FX README</b></h3>
+  <h3><b>FX-TODAY README</b></h3>
 </div>
 
 # 📗 Table of Contents
@@ -23,9 +23,9 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 [Trendy FX] <a name="about-project"></a>
+# 📖 [Fx-Today FX] <a name="about-project"></a>
 
-**Trendy FX** is a web app that displays the currency exchange rate for the day. User can select their choice of currency and compare the exchange rate with another currency.
+**Fx-Today FX** is a web app that displays the currency exchange rate for the day. User can select their choice of currency and compare the exchange rate with another currency.
 
 .
 
@@ -46,6 +46,8 @@
 - **Consume the API for listing currency**
 - **View the exchange rate for a particular currency**
 - **Filter and select currency**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 

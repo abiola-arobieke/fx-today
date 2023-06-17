@@ -28,6 +28,17 @@ const ExchangeList = () => {
           onChange={(e) => setSearch(e.target.value)}
         />
       </form>
+      <div className="d-flex info">
+        <div className="md-6 d-flex mid-center">
+          <img className="base-img" src="https://currencyfreaks.com/photos/flags/usd.png" alt="currency-flag" />
+        </div>
+        <div className="md-6 d-flex mid-center base-title">
+          <div className="md-6">
+            <h2>USD</h2>
+            <div>1.000</div>
+          </div>
+        </div>
+      </div>
       <ul className="grid">
         {allExchange
           ?.filter((currency) => (search.toLowerCase() === ''
