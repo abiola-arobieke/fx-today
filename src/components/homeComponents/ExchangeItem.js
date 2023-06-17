@@ -7,7 +7,7 @@ import {
 } from '../../utility/imagePlaceholder';
 import '../../styles/exchange.css';
 
-const ExchangeItem = ({ currency }) => {
+const ExchangeItem = ({ currency, amount }) => {
   const [currencyImage, setCurrencyImage] = useState(placeholderImageUrl);
   useEffect(() => {
     imageExist(currency.flag).then((imgUrl) => {
@@ -31,10 +31,15 @@ const ExchangeItem = ({ currency }) => {
             </div>
           </div>
           <div className="rate d-flex spc-btw-25 a-center">
-            <div className="ft-sm">1 USD</div>
+            <div className="ft-sm">
+              <span>
+                {amount}
+              </span>
+              <span> USD</span>
+            </div>
             <div>
               <span>~ </span>
-              <span className="word">{currency.rateNow}</span>
+              <span className="word">{(currency.rateNow * amount).toFixed(2)}</span>
             </div>
           </div>
         </div>
@@ -45,6 +50,7 @@ const ExchangeItem = ({ currency }) => {
 
 ExchangeItem.propTypes = {
   currency: PropTypes.instanceOf(Object).isRequired,
+  amount: PropTypes.number.isRequired,
 };
 
 export default ExchangeItem;
