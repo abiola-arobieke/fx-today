@@ -5,7 +5,7 @@ import {
   placeholderImageUrl,
 } from '../../utility/imagePlaceholder';
 
-const ExchangeDetailItem = ({ currency }) => {
+const ExchangeDetailItem = ({ currency, amount }) => {
   const [currencyImage, setCurrencyImage] = useState(placeholderImageUrl);
   useEffect(() => {
     imageExist(currency.flag).then((imgUrl) => {
@@ -29,7 +29,7 @@ const ExchangeDetailItem = ({ currency }) => {
         </div>
         <div className="md-6">
           <div className="d-flex f-end">
-            <div className="rate">{currency.rateNow}</div>
+            <div className="rate">{(currency.rateNow * amount).toFixed(2)}</div>
           </div>
         </div>
       </div>
@@ -39,5 +39,6 @@ const ExchangeDetailItem = ({ currency }) => {
 
 ExchangeDetailItem.propTypes = {
   currency: PropTypes.instanceOf(Object).isRequired,
+  amount: PropTypes.number.isRequired,
 };
 export default ExchangeDetailItem;
