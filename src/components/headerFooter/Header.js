@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom';
-
-const backArrow = './back.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLessThan } from '@fortawesome/free-solid-svg-icons';
 
 function Header() {
   return (
     <div className="header d-flex a-center">
       <Link to="/">
-        <img className="back" src={backArrow} alt="back-arrow" />
+        <FontAwesomeIcon className="txt-white" icon={faLessThan} />
       </Link>
-      <h2 className="header-title txt-white a-center">fx-today</h2>
+      <h2 className="header-title txt-white a-center">FX-Today</h2>
     </div>
   );
 }
