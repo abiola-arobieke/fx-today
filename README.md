@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h3><b>Trendy FX README</b></h3>
+  <h3><b>FX-TODAY README</b></h3>
 </div>
 
 # 📗 Table of Contents
@@ -10,6 +10,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+    - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
 - [Prerequisites](#prerequisites)
 - [Setup](#setup)
@@ -22,9 +23,9 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 [Trendy FX] <a name="about-project"></a>
+# 📖 [Fx-Today FX] <a name="about-project"></a>
 
-**Trendy FX** is a web app that displays the currency exchange rate for the day. User can select their choice of currency and compare the exchange rate with another currency.
+**Fx-Today FX** is a web app that displays the currency exchange rate for the day. User can select their choice of currency and compare the exchange rate with another currency.
 
 .
 
@@ -45,6 +46,12 @@
 - **Consume the API for listing currency**
 - **View the exchange rate for a particular currency**
 - **Filter and select currency**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://fx-today.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -130,6 +137,8 @@ If you like this project... Give it a Star
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
+UI design was created by Nelson Sakwa and can be found on Behance.
+
 I would like to thank to the Microverse team for the learning opportunity
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -137,5 +146,7 @@ I would like to thank to the Microverse team for the learning opportunity
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE.md) licensed.
+
+UI design was created by Original design idea by 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
