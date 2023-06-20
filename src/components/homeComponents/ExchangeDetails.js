@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { faMagnifyingGlass, faPencil } from '@fortawesome/free-solid-svg-icons';
 import { useDispatch, useSelector } from 'react-redux';
 import { getSingleCurrency } from '../../redux/currency/currencySlice';
 import ExchangeDetailItem from './ExchangeDetailItem';
@@ -41,7 +41,7 @@ const ExchangeDetails = () => {
               type="search"
               className="searchBar"
               placeholder="Search currency..."
-              onChange={(e) => setSearch(e.target.value)}
+              onChange={(e) => setSearch((e.target.value).toLowerCase())}
             />
           </div>
         </form>
@@ -56,12 +56,15 @@ const ExchangeDetails = () => {
               </div>
               <div className="">
                 <h2>{id}</h2>
-                <input
-                  type="number"
-                  placeholder="1.00"
-                  className="amount"
-                  onChange={(e) => calculator(e)}
-                />
+                <div className="d-flex full-width gap-5">
+                  <input
+                    type="number"
+                    placeholder="1.00"
+                    className="amount"
+                    onChange={(e) => calculator(e)}
+                  />
+                  <FontAwesomeIcon icon={faPencil} />
+                </div>
               </div>
             </div>
           </div>
@@ -72,7 +75,7 @@ const ExchangeDetails = () => {
         </div>
       </div>
       <ul className="grid-details">
-        {selectedCurrency?.filter((currency) => (search.toLowerCase() === ''
+        {selectedCurrency?.filter((currency) => (search === ''
           ? !(currency.code === `${id}`)
           : currency.code.toLowerCase().includes(search)) && !(currency.code === `${id}`))
           .map((currency) => (

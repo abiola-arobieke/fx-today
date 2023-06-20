@@ -227,10 +227,15 @@ input:focus::-webkit-input-placeholder {
   text-align: right;
 }
 
+.gap-5 {
+  gap: 5px;
+}
+
 .amount {
   border: none;
   color: #fff;
   font-size: 1rem;
+  width: 60%;
   background-color: transparent;
 }
 
